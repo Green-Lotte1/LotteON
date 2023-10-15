@@ -11,6 +11,10 @@ java {
 	sourceCompatibility = '17'
 }
 
+jar {
+	enabled = false
+}
+
 configurations {
 	compileOnly {
 		extendsFrom annotationProcessor
@@ -41,4 +45,8 @@ dependencies {
 
 tasks.named('test') {
 	useJUnitPlatform()
+}
+
+tasks.getByName<Jar>("jar") {
+	enabled = false
 }
