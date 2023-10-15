@@ -11,9 +11,6 @@ java {
 	sourceCompatibility = '17'
 }
 
-jar {
-	enabled = false
-}
 
 configurations {
 	compileOnly {
@@ -47,6 +44,3 @@ tasks.named('test') {
 	useJUnitPlatform()
 }
 
-tasks.getByName<Jar>("jar") {
-	enabled = false
-}
