@@ -69,7 +69,7 @@ jobs:
       - name: Deploy
         run: |
           aws deploy create-deployment \
-          --application-name lotteon \
+          --application-name chhak2023-codedeploy-app \
           --deployment-config-name CodeDeployDefault.AllAtOnce \
           --deployment-group-name chhak2023-codedeploy-deployment-group \
           --file-exists-behavior OVERWRITE \
